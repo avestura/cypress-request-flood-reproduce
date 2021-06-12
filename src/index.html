@@ -1,0 +1,16 @@
+<html>
+<head>
+	<script>
+		const a = () => {
+			document.getElementById('p').innerText = 'abb'
+			const f = document.getElementsByTagName('iframe').item(0)
+			f.contentDocument.body.querySelector('h1').innerHTML = "haaaaaaaaaaa"
+		}
+	</script>
+</head>
+<body>
+	<button onclick="a()">click</button>
+	<p id="p">some text</p>
+	<iframe id="f" src="inner.html"></iframe>
+</body>
+</html>
